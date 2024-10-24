@@ -1,0 +1,55 @@
+[Input]
+useSpecialPad = false
+specialPadClass = 1
+
+[General]
+showSplash = false
+logFilter = ""
+isPS4Pro = false
+Fullscreen = false
+userName = "shadPS4"
+logType = "async"
+
+[GPU]
+dumpShaders = false
+screenWidth = 1280
+vblankDivider = 1
+screenHeight = 720
+nullGpu = false
+copyGPUBuffers = false
+dumpPM4 = false
+
+[Vulkan]
+validation_sync = false
+gpuId = -1
+validation = false
+crashDiagnostic = false
+validation_gpu = false
+rdocEnable = false
+rdocMarkersEnable = false
+
+[Settings]
+consoleLanguage = 1
+
+[GUI]
+theme = 0
+mw_width = 1280
+iconSize = 36
+geometry_x = 400
+gameTableMode = 0
+sliderPosGrid = 0
+sliderPos = 0
+mw_height = 720
+iconSizeGrid = 69
+installDir = ""
+pkgDirs = []
+geometry_y = 400
+geometry_w = 1280
+geometry_h = 720
+elfDirs = []
+recentFiles = []
+emulatorLanguage = "en"
+
+[Debug]
+DebugDump = false
+

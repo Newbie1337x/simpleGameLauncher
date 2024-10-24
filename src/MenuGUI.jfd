@@ -1,0 +1,153 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par l {comp scrollPane1::l:p:288:p, seq l {comp addGame:::p:205:p, space :::p, comp modify:::p:34:p, space :::p, comp delete:::p:34:p}}, space :::p, par l {comp panel1:::::x, comp gameTitlePanel:::::x}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :p:21:p, par l {seq {comp scrollPane1::::560:x, space :::p, par b {comp addGame::b:p:21:p, comp modify::b:p:22:p, comp delete::b:p:22:p}, space :p::p}, seq {comp gameTitlePanel:::::x, space :p:12:p, comp panel1:::::p}}}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "gameList"
+					"font": new com.jformdesigner.model.SwingDerivedFont( "SansSerif", 131073, 13, true )
+					"selectionMode": 0
+					"cursor": &Cursor0 new java.awt.Cursor( 12 )
+					"focusable": false
+					auxiliary() {
+						"JavaCodeGenerator.typeParameters": "Game"
+					}
+					addEvent( new FormEvent( "javax.swing.event.ListSelectionListener", "valueChanged", "gameListSelected", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addGame"
+				"text": "Add game"
+				"borderPainted": false
+				"cursor": #Cursor0
+				"foreground": new java.awt.Color( 102, 102, 102, 255 )
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "addGameMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "addGameMouseEntered", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "addGameMouseExited", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp panel2::l:::x, seq t {comp panel3:::::x, space :::p}}}, seq l {space :p:20:p, comp scrollPane2:::p:445:p, space :0:280:x}}"
+				"$verticalGroup": "par l {seq l {space :p:14:p, comp panel2:::::x, space :p:43:p, comp scrollPane2:::p:103:p, space u:::p, comp panel3:::p::p, space :p:140:p}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp fileManager:::p:88:p, space ::639:x}}"
+					"$verticalGroup": "par l {seq t {space :::x, comp fileManager:::p:26:p, space :::p}}"
+				} ) {
+					name: "panel3"
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"background": new java.awt.Color( 40, 45, 51, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "fileManager"
+						"text": "Path"
+						"font": new java.awt.Font( "Inter", 1, 13 )
+						"foreground": new java.awt.Color( 102, 102, 102, 255 )
+						"cursor": #Cursor0
+						"border": new javax.swing.border.LineBorder( sfield java.awt.Color darkGray, 1, false )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "fileManagerMouseEntered", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseExited", "fileManagerMouseExited", true ) )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "fileManagerMouseClicked", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JTextPane" ) {
+						name: "gameDescription"
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"cursor": new java.awt.Cursor( 2 )
+						"focusable": false
+						"editable": false
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+						"foreground": new java.awt.Color( 204, 204, 204, 255 )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p::p, comp playButton:::p:147:p, space s:p::p, par l {seq l {space :p:14:p, comp timePlayed:::p:61:p}, comp infoPlayed::l:p:84:p}, space :p:231:p, par l {comp infoRelease:::p:84:p, comp releaseDate:::p::p}, par l {comp infoPlatform::l:p:84:p, comp platform:::p:139:p}, space :p:12:p}}"
+					"$verticalGroup": "par l {seq l {space :p::p, par l {comp playButton:::::x, seq {par l {seq {comp infoPlatform:::p:22:p, space :p::p, par b {comp platform::b:p:21:p, comp releaseDate::b:p:21:p}}, comp infoRelease:::p:22:p, seq {comp infoPlayed:::p:26:p, space :::p, comp timePlayed:::p::p}}, space :0:0:x}}, space :p:1:p}}"
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 40, 45, 51, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "playButton"
+						"text": "PLAY"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 11, false )
+						"foreground": sfield java.awt.Color white
+						"background": new java.awt.Color( 0, 204, 51, 255 )
+						"focusPainted": false
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"cursor": #Cursor0
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "playButtonMouseClicked", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "infoPlayed"
+						"text": "Time Played"
+						"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 1, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "timePlayed"
+						"text": "0 Hours"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "infoRelease"
+						"text": "Release"
+						"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 1, false )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "releaseDate"
+						"text": "unknown"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "infoPlatform"
+						"text": "Platform"
+						"font": #SwingDerivedFont0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "platform"
+						"text": "unknown"
+					} )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:27:p, comp gameTitle:::::x, space :p:418:p}}"
+				"$verticalGroup": "par l {seq t {space ::61:x, comp gameTitle:::p:103:p, space :::p}}"
+			} ) {
+				name: "gameTitlePanel"
+				"border": new javax.swing.border.SoftBevelBorder( 1, null, null, null, null )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "gameTitle"
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 27, false )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "delete"
+				"text": "-"
+				"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"foreground": new java.awt.Color( 102, 102, 102, 255 )
+				"borderPainted": false
+				"cursor": new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "deleteMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "deleteMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "modify"
+				"text": "m"
+				"foreground": new java.awt.Color( 102, 102, 102, 255 )
+				"border": #LineBorder0
+				"borderPainted": false
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "modifyMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 40, 50 )
+			"size": new java.awt.Dimension( 1045, 615 )
+		} )
+	}
+}
