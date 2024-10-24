@@ -29,6 +29,6 @@ Intuitive interface:
 ![image](https://github.com/user-attachments/assets/a2e70a05-82c6-4640-bcde-735d774c68ea)
 
 
-git clone: https://github.com/yourusername/SimpleGameLauncher.git
+git clone: https://github.com/Newbie1337x/SimpleGameLauncher.git
 
 Feel free to submit pull requests or report issues to help improve the project!
